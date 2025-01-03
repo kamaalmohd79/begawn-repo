@@ -56,10 +56,10 @@ const Proof = () => {
   };
 
   return (
-    <div className="proof-image xl:mt-[130px] lg:mt-[100px] md:mt-[75px] sm:mt-[50] mt-[25px]">
+    <div className="proof-image xl:mt-[130px] lg:mt-[100px] md:mt-[75px] sm:mt-[50] mt-[25px]" >
       <div className="lg:pt-[70px] sm:pt-[40px] pt-3">
         <h1 className="text-black lg:text-[56px] md:text-[44px] sm:text-[36px] text-[28px] font-sathosi font-bold leading-[75px] text-center lg:mb-[50px] md:mb-[40px] sm:mb-[30px] mb-2">
-          Proof Of Work
+          Portfolio
         </h1>
       </div>
       <div className="xl:w-[1050px] lg:w-[800px] md:w-[725px] sm:w-[450px] w-[300px]  mx-auto">

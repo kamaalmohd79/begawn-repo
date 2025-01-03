@@ -53,7 +53,7 @@ const Choose = () => {
   ];
 
   return (
-    <div className="relative max-w-[1350px] px-4   mx-auto lg:mt-[130px] md:mt-[110px] sm:pt-[90px] mt-[15px] z-20 sm:h-[840px] ">
+    <div className="relative max-w-[1350px] px-4   mx-auto lg:mt-[130px] md:mt-[110px] sm:pt-[90px] mt-40 z-20 sm:h-[840px] " name="choose_section">
       <div className="relative w-full  sm:px-4 border sm:rounded-[2.1rem] rounded-xl border-[#d9d9dd9] choose-image lg:h-full">
         <h1 className="text-black lg:text-[46px] md:text-[40px] sm:text-[36px] text-[28px] font-sathosi font-bold lg:mb-8 mb-2 md:pl-12 pl-4 lg:mt-[93px] mt-[30px] leading-[62px]">
           Why Choose Us
@@ -98,7 +98,7 @@ const Choose = () => {
               </AccordionItem>
             ))}
           </div>
-          <img src="images/Layer.png" alt="" className="2xl:w-[640px] mx-auto  object-contain xl:w-[640px] lg:w-[450px] sm:w-[400px] w-[320px]  2xl:h-[516px] lg:h-[500px] h-[350px] md:absolute top-[50%] sm:translate-y-[-50%] 2xl:right-10 xl:right-8 lg:right-6 lg:ml-0 md:ml-60" />
+          <img src="images/champ.svg" alt="" className="2xl:w-[640px] mx-auto xl:w-[640px] lg:w-[450px] sm:w-[400px] w-[320px]  2xl:h-[516px] lg:h-[500px] h-[350px] md:absolute top-[50%] sm:translate-y-[-50%] 2xl:right-10 xl:right-8 lg:right-6 lg:ml-0 md:ml-60" />
         </Accordion>
       </div>
       <div class="blurred-circle absolute sm:bottom-[-30%] sm:left-[-10%] left-[-50%] -z-10"></div>

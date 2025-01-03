@@ -11,7 +11,7 @@ import Client from "./Client";
 const Homepage = () => {
   return (
     <div>
-      <div className="text-center background ">
+      <div className="text-center background" name="home_section">
         <div className="lg:pt-[129px] md:pt-[100px] sm:pt-[70px] pt-[30px]">
           <h1 className="text-black lg:text-[80px] md:text-[55px] sm:text-[40px] text-[28px] font-[900] font-sathosi lg:leading-[97px] md:leading-[70px] sm:leading-[50px] leading-[36px] md:mb-[18px] mb-[12px]">
             A House of Nerdy <br /> Technical Writers
@@ -30,7 +30,7 @@ const Homepage = () => {
       </div>
       <Choose />
       <Documentation />
-      <div name="proof_work">
+      <div name="portfolio_section">
         <Proof />
       </div>
       <Book />

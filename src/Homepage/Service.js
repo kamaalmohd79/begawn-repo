@@ -1,63 +1,11 @@
 import React from "react";
-import Carousel from 'react-multi-carousel';
-
 const Service = () => {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 4
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 4
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 2
-    }
-  };
-
   return (
     <div className="lg:mt-[106px] md:mt-[90px] sm:mt-[60] mb-[32px] max-w-[1350px] px-4 h-auto mx-auto">
       <h1 className="text-black lg:text-[56px] md:text-[44px] sm:text-[36px] text-[28px] font-sathosi font-bold  lg:leading-[97px] md:leading-[70px] sm:leading-[50px] leading-[36px] text-center">
         Our Services
       </h1>
-      <div className="">
-
-        <Carousel
-          additionalTransfrom={0}
-          arrows={false}
-          autoPlaySpeed={3000}
-          centerMode={false}
-          className="pt-6 pb-[75px] carousel-padding "
-          containerClass="container-with-dots"
-          dotListClass="custom_service_slider"
-          draggable
-          focusOnSelect={false}
-          infinite
-          itemClass="px-2"
-          keyBoardControl
-          minimumTouchDrag={80}
-          pauseOnHover
-          renderArrowsWhenDisabled={false}
-          renderButtonGroupOutside={false}
-          renderDotsOutside={false}
-          responsive={responsive}
-          rewind={false}
-          rewindWithAnimation={false}
-          rtl={false}
-          shouldResetAutoplay
-          showDots={true}
-          sliderClass=""
-          slidesToSlide={1}
-          swipeable
-        >
-
+      <div className="grid md:grid-cols-4 md:gap-6 grid-cols-2 gap-2">
           <div
             className={`py-6 grad_one hover:cursor-pointer hover:bg-[#E9F1FF] md:h-[382px] h-[200px] w-full   border border-[#d9d9d9] hover:shadow-xl hover:shadow-[#d9d9d9] rounded-[20px] mt-6`}
 
@@ -125,7 +73,6 @@ const Service = () => {
             </div>
 
           </div>
-        </Carousel>
       </div>
     </div>
   );

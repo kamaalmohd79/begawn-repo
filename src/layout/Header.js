@@ -64,7 +64,7 @@ function Header() {
               <NavLink
                 onClick={(e) => {
                   e.preventDefault(); // Prevent full page reload
-                  scrollToSection('footer_section');
+                  scrollToSection('home_section');
                   closeMenu()
                 }}
                 to="/"
@@ -73,7 +73,7 @@ function Header() {
                   }`
                 }
               >
-                About Us
+                Home
               </NavLink>
             </li>
             <li className="mt-3 md:mt-0">
@@ -97,7 +97,7 @@ function Header() {
               <NavLink
                 onClick={(e) => {
                   e.preventDefault(); // Prevent full page reload
-                  scrollToSection('proof_work');
+                  scrollToSection('choose_section');
                   closeMenu()
                 }}
                 to="/"
@@ -107,14 +107,14 @@ function Header() {
                   }`
                 }
               >
-                Case Studies
+                Why Choose us
               </NavLink>
             </li>
             <li className="mt-3 md:mt-0">
               <NavLink
                 onClick={(e) => {
                   e.preventDefault(); // Prevent full page reload
-                  scrollToSection('footer_section');
+                  scrollToSection('stack_section');
                   closeMenu()
                 }}
                 to="/"
@@ -123,14 +123,14 @@ function Header() {
                   }`
                 }
               >
-                Careers
+                Stack
               </NavLink>
             </li>
             <li className="mt-3 md:mt-0">
               <NavLink
                 onClick={(e) => {
                   e.preventDefault(); // Prevent full page reload
-                  scrollToSection('footer_section');
+                  scrollToSection('portfolio_section');
                   closeMenu()
                 }}
                 to="/"
@@ -139,7 +139,7 @@ function Header() {
                   }`
                 }
               >
-                FAQS
+                Portfolio
               </NavLink>
             </li>
             <li className="pl-6 mt-3 mb-6 md:mt-0 md:hidden">

@@ -30,32 +30,26 @@ const Client = () => {
     {
       logo: "images/Group 1000002739 (1).png",
       desc: 'Love Muze. Great guy, great worker, cares deeply and does a good job. Will work with again.',
-      title: "-TrendSpider",
     },
     {
       logo: "images/image 32.png",
       desc: 'Muze was always responsive and very good at understanding knowledge base development and technical writing. Great to work with!',
-      title: "-InstaWP",
     },
     {
       logo: "images/Group 1000002738 (1).png",
       desc: 'Muza is a great person - he helped us a lot with the project. He works hard and fast, and knows what he is talking about! I would highly recommend Muza. Thank you!',
-      title: "-Knowi",
     },
     {
       logo: "images/image 38.png",
       desc: 'Great experience getting all technical documentation completed.',
-      title: "-Amove",
     },
     {
       logo: "images/image (11).png",
       desc: 'Great worker, communicates very well and is very helpful. Worker also open to help the project wherever they can, with useful suggestions. Great quality work and very thoughtful when delivering.',
-      title: "-Intel",
     },
     {
       logo: "images/image 42.png",
       desc: 'Muze was always responsive and very good at understanding knowledge base development and technical writing. Great to work with!',
-      title: "-TATA",
     },
   ];
 
@@ -131,7 +125,6 @@ const Client = () => {
                   <div key={index} className="px-2 text-center md:p-8 sm:mx-4">
                     <img src={item.logo} alt="Client logo" className="mx-auto mb-10 " />
                     <p className="text-black font-poppins lg:text-[27px] md:text-[22px] sm:text-[18px] text-[14px] font-normal mb-5  md:mb-10">"{item.desc}"</p>
-                    <h3 className="font-poppins sm:text-[24px] font-semibold text-[15px] text-[#4283DE] mb-6">{item.title}</h3>
                   </div>
                 ))}
               </Carousel>

@@ -11,7 +11,7 @@ function Footer() {
     });
   };
   return (
-    <div className="bg-[#254C86] xl:h-[706px] " name="footer_section" >
+    <div className="bg-[#254C86] xl:h-[706px] ">
       <div className=" max-w-[1350px] md:px-4 pl-[40px] pr-[24px] mx-auto pt-[90px]  flex items-start justify-between flex-wrap mb-[73px]">
         {/* first row */}
         <div className="md:w-[400px] w-full">
@@ -51,9 +51,14 @@ function Footer() {
             </h4>
             <ul className="grid grid-cols-2 gap-8 md:gap-0 md:grid-cols-1">
               <div className="">
-                <Link to={"/"} className="mb-3">
+                <Link to={"/"} className="mb-3"
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent full page reload
+                  scrollToSection('home_section');
+                }}
+                >
                   <li className="text-white opacity-[0.79] md:mb-[30px] mb-[15px] hover:opacity-100 transition-all duration-200 text-[16px] font-poppins font-medium ">
-                    About us
+                    Home
                   </li>
                 </Link>
                 <Link onClick={(e) => {
@@ -68,23 +73,33 @@ function Footer() {
                 </Link>
                 <Link onClick={(e) => {
                   e.preventDefault(); // Prevent full page reload
-                  scrollToSection('proof_work');
+                  scrollToSection('choose_section');
 
                 }} to={"/"} className="mb-3" >
                   <li className="text-white opacity-[0.79] md:mb-[30px] mb-[15px] hover:opacity-100 transition-all duration-200 text-[16px] font-poppins font-medium ">
-                    Our Work
+                    Why Choose us
                   </li>
                 </Link>
               </div>
               <div className="">
-                <Link to={"/"} className="mb-3" >
+                <Link to={"/"} className="mb-3" 
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent full page reload
+                  scrollToSection('stack_section');
+                }}
+                >
                   <li className="text-white opacity-[0.79] md:mb-[30px] mb-[15px] hover:opacity-100 transition-all duration-200 text-[16px] font-poppins font-medium ">
-                    Careers
+                    Stack
                   </li>
                 </Link>
-                <Link to={"/"} className="mb-3">
+                <Link to={"/"} className="mb-3"
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent full page reload
+                  scrollToSection('portfolio_section');
+                }}
+                >
                   <li className="text-white opacity-[0.79] md:mb-[30px] mb-[15px] hover:opacity-100 transition-all duration-200 text-[16px] font-poppins font-medium ">
-                    FAQ
+                    Portfolio
                   </li>
                 </Link>
               </div>

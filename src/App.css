@@ -126,20 +126,6 @@
   opacity: 0.3;
 }
 
-.custom_service_slider .react-multi-carousel-dot button {
-  background: #D9D9D9;
-  height: 14px;
-  width: 14px;
-  border: none;
-}
-
-.custom_service_slider .react-multi-carousel-dot--active button {
-  background: #578CDA;
-  height: 24px;
-  width: 24px;
-  border: none;
-}
-
 .left_arrow_proof {
   display: flex;
   align-items: center;
@@ -194,15 +180,7 @@
     font-size: 20px;
     right: -25px;
   }
-  .custom_service_slider .react-multi-carousel-dot button{
-    width: 8px;
-    height: 8px;
-  }
 
-  .custom_service_slider .react-multi-carousel-dot--active button {
-    height: 12px;
-    width: 12px;
-  }
 }
 .carousel-padding{
   padding-bottom: 50px;
