@@ -74,7 +74,7 @@ const Documentation = () => {
                 </div>
                 <div className="flex items-center mb-6 sm:mb-8">
                   <img src="images/image 16.png" alt="" className="inline-block w-6 mr-4 " />
-                  <p className="inline-block text-black font-poppins font-medium sm:text-[18px] text-[16px] sm:leading-[25px] leading-[22px]">GuideJar</p>
+                  <p className="inline-block text-black font-poppins font-medium sm:text-[18px] text-[16px] sm:leading-[25px] leading-[22px]">Guidejar</p>
                 </div>
               </div>
             </div>
