@@ -74,7 +74,7 @@ const Documentation = () => {
                 </div>
                 <div className="flex items-center mb-6 sm:mb-8">
                   <img src="images/image 16.png" alt="" className="inline-block w-6 mr-4 " />
-                  <p className="inline-block text-black font-poppins font-medium sm:text-[18px] text-[16px] sm:leading-[25px] leading-[22px]">Guide Jar</p>
+                  <p className="inline-block text-black font-poppins font-medium sm:text-[18px] text-[16px] sm:leading-[25px] leading-[22px]">GuideJar</p>
                 </div>
               </div>
             </div>
@@ -92,7 +92,7 @@ const Documentation = () => {
                   <p className="inline-block text-black font-poppins font-medium sm:text-[18px] text-[16px] sm:leading-[25px] leading-[22px]">Lucidchart</p>
                 </div>
                 <div className="flex items-center mb-6 sm:mb-8">
-                  <img src="images/image 48.png" alt="" className="inline-block w-6 mr-4 " />
+                  <img src="images/Vector.png" alt="" className="inline-block w-6 mr-4 " />
                   <p className="inline-block text-black font-poppins font-medium sm:text-[18px] text-[16px] sm:leading-[25px] leading-[22px]">Mermaid</p>
                 </div>
                 <div className="flex items-center mb-6 sm:mb-8">

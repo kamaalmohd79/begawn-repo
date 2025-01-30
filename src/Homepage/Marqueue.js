@@ -57,9 +57,9 @@ const Marqueue = () => {
         <Link className="px-3" to>
           <img src="images/Clip path group.png" alt="" className=" mx-9" />
         </Link>
-        <Link className="px-3">
+        {/* <Link className="px-3">
           <img src="images/freepik_br_de6be83f-f9a3-4f84-b51a-a840e8dbb0d2 1.png" alt="" className=" mx-9" />
-        </Link>
+        </Link> */}
       </Marquee>
     </div>
   );

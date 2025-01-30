@@ -60,7 +60,7 @@ const Choose = () => {
         </h1>
         <Accordion
           allowZeroExpanded
-          className="sm:px-0 px-2 xl:w-[528px] lg:w-[450px] w-full flex flex-col"
+          className="sm:px-0 px-2 xl:w-[528px] lg:w-[450px] w-full flex flex-col md:pb-0 pb-8"
         >
           <div>
             {accordionData.map((item, index) => (
