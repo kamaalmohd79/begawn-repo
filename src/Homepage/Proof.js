@@ -10,11 +10,8 @@ import { FaArrowRight } from "react-icons/fa6";
 // Custom Next Arrow
 const NextArrow = ({ onClick }) => {
   return (
-    <div
-      onClick={onClick}
-      className="right_arrow_proof"
-    >
-     <FaArrowRight/> 
+    <div onClick={onClick} className="right_arrow_proof">
+      <FaArrowRight/>
     </div>
   );
 };
@@ -51,8 +48,8 @@ const Proof = () => {
     slidesToScroll: 1,
     centerMode: true,
     centerPadding: "0",
-    nextArrow: <NextArrow onClick={() => sliderRef.current.slickNext()} />,
-    prevArrow: <PrevArrow onClick={() => sliderRef.current.slickPrev()} />,
+    nextArrow: <NextArrow />,
+prevArrow: <PrevArrow />,
   };
 
   return (
