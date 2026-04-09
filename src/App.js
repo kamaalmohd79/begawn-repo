@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Homepage from './Homepage';
 import 'react-multi-carousel/lib/styles.css';
 import Layout from './layout';
-import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
+// ❌ REMOVE THIS
+// import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
@@ -15,16 +16,16 @@ function App() {
         <Layout>
           <Routes>
             <Route path="/" element={<Homepage />} />
-            {/* Add other routes here */}
           </Routes>
         </Layout>
       </Router>
-     
+
+      {/* ✅ ONLY ONE WHATSAPP BUTTON */}
       <a
-        href="https://wa.me/+917986228254" // WhatsApp international URL format
+        href="https://wa.me/+917986228254"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed  bottom-6 right-2 w-[160px] h-160px"
+        className="fixed bottom-6 right-2 w-[160px] h-[160px]"
         aria-label="Contact us on WhatsApp"
       >
         <DotLottieReact
@@ -33,13 +34,7 @@ function App() {
           autoplay
         />
       </a>
-
-      {/* <TawkMessengerReact
-        propertyId="62f25dc754f06e12d88db945"
-        widgetId="1ga1bslpq"
-      /> */}
     </>
-
   );
 }
 
