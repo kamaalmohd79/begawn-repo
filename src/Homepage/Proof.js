@@ -61,7 +61,7 @@ const Proof = () => {
               
               <img
                 src={item.image}
-                alt={`Proof ${index + 1}`}   // ✅ FIXED HERE
+                alt={`Proof ${index + 1}`}   
                 className="object-cover w-full h-full"
               />
 
