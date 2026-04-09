@@ -5,23 +5,18 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
-// Custom Next Arrow
-const NextArrow = ({ onClick }) => {
-  return (
-    <div onClick={onClick} className="right_arrow_proof">
-      <FaArrowRight />
-    </div>
-  );
-};
+// Arrows
+const NextArrow = ({ onClick }) => (
+  <div onClick={onClick} className="right_arrow_proof">
+    <FaArrowRight />
+  </div>
+);
 
-// Custom Previous Arrow
-const PrevArrow = ({ onClick }) => {
-  return (
-    <div onClick={onClick} className="left_arrow_proof">
-      <FaArrowLeft />
-    </div>
-  );
-};
+const PrevArrow = ({ onClick }) => (
+  <div onClick={onClick} className="left_arrow_proof">
+    <FaArrowLeft />
+  </div>
+);
 
 const Proof = () => {
   const sliderRef = useRef(null);
@@ -48,43 +43,38 @@ const Proof = () => {
 
   return (
     <div className="proof-image xl:mt-[130px] lg:mt-[100px] md:mt-[75px] sm:mt-[50] mt-[25px]">
+      
       <div className="lg:pt-[70px] sm:pt-[40px] pt-3">
-        <h1 className="text-black lg:text-[56px] md:text-[44px] sm:text-[36px] text-[28px] font-sathosi font-bold leading-[75px] text-center lg:mb-[50px] md:mb-[40px] sm:mb-[30px] mb-2">
+        <h1 className="text-black lg:text-[56px] md:text-[44px] sm:text-[36px] text-[28px] font-sathosi font-bold text-center lg:mb-[50px] md:mb-[40px] sm:mb-[30px] mb-2">
           Portfolio
         </h1>
       </div>
 
       <div className="xl:w-[1050px] lg:w-[800px] md:w-[725px] sm:w-[450px] w-[300px] mx-auto">
+        
         <Slider {...settings} ref={sliderRef}>
+          
           {imageData.map((item, index) => (
             <div key={index} className="relative group">
               
               <img
                 src={item.image}
-                alt={`Proof ${index + 1}`}   // ✅ FIXED HERE
+                alt={`Proof ${index + 1}`}
                 className="object-cover w-full h-full"
               />
 
-              <div
-                className="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300"
                 style={{
                   backgroundColor: "rgba(217, 217, 217, 0.1)",
                   backdropFilter: "blur(1px)",
                 }}
               >
-                {/* ✅ FIXED: use <a> instead of Link */}
                 <a
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="sm:mb-[85px] mb-[22px]"
                 >
-                  <div
-                    className="flex items-center justify-center sm:w-16 sm:h-16 w-12 h-12 bg-white rounded-full"
-                    style={{
-                      boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                    }}
-                  >
+                  <div className="flex items-center justify-center sm:w-16 sm:h-16 w-12 h-12 bg-white rounded-full shadow">
                     <RxExternalLink className="text-[#4283DE] sm:text-3xl text-2xl" />
                   </div>
                 </a>
@@ -92,6 +82,7 @@ const Proof = () => {
 
             </div>
           ))}
+
         </Slider>
       </div>
     </div>

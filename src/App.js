@@ -3,9 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Homepage from './Homepage';
 import 'react-multi-carousel/lib/styles.css';
 import Layout from './layout';
-
-
-
+import { FaWhatsapp } from "react-icons/fa";   // ✅ add this
 
 function App() {
   return (
@@ -14,38 +12,20 @@ function App() {
         <Layout>
           <Routes>
             <Route path="/" element={<Homepage />} />
-            {/* Add other routes here */}
           </Routes>
         </Layout>
       </Router>
-      {/* <FloatingWhatsApp
-        phoneNumber="+917986228254"
-        accountName={`Begawn`}
-         /> */}
-      {/* <FloatingWhatsApp
-        phoneNumber="+917986228254"
-        accountName={`Begawn`} */}
-      {/*= /> */}
-      {/* <a
-        href="https://wa.me/+917986228254" // WhatsApp international URL format
+
+      {/* ✅ WhatsApp Floating Button */}
+      <a
+        href="https://wa.me/917986228254"   // your number
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed  bottom-6 right-2 w-[120px] h-120px"
-        aria-label="Contact us on WhatsApp"
+        className="fixed bottom-5 right-5 w-[60px] h-[60px] bg-green-500 rounded-full flex items-center justify-center shadow-lg z-50"
       >
-        <FloatingWhatsApp
-        phoneNumber="+917986228254"
-        accountName={`Begawn`}
-         />
-        
-      </a> */}
-
-      {/* <TawkMessengerReact
-        propertyId="62f25dc754f06e12d88db945"
-        widgetId="1ga1bslpq"
-      /> */}
+        <FaWhatsapp className="text-white text-3xl" />
+      </a>
     </>
-
   );
 }
 
