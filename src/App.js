@@ -19,7 +19,9 @@ function App() {
           </Routes>
         </Layout>
       </Router>
-     
+      {/* <FloatingWhatsApp
+        phoneNumber="+917986228254"
+        accountName={`Begawn`} /> */}
       {/* <FloatingWhatsApp
         phoneNumber="+917986228254"
         accountName={`Begawn`} */}
