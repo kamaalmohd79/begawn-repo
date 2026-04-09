@@ -19,13 +19,7 @@ function App() {
           </Routes>
         </Layout>
       </Router>
-      {/* <FloatingWhatsApp
-        phoneNumber="+917986228254"
-        accountName={`Begawn`} /> */}
-      {/* <FloatingWhatsApp
-        phoneNumber="+917986228254"
-        accountName={`Begawn`} */}
-      {/*= /> */}
+     
       <a
         href="https://wa.me/+917986228254" // WhatsApp international URL format
         target="_blank"
