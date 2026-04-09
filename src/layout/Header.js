@@ -18,7 +18,7 @@ function Header() {
     scroller.scrollTo(section, {
       smooth: true,
       duration: 1000,
-      offset: -100, // Adjust for sticky headers
+      offset: -100, 
     });
   };
 
