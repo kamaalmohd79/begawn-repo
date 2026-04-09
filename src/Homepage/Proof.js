@@ -5,23 +5,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
-// Custom Next Arrow
-const NextArrow = ({ onClick }) => {
-  return (
-    <div onClick={onClick} className="right_arrow_proof">
-      <FaArrowRight />
-    </div>
-  );
-};
+const NextArrow = ({ onClick }) => (
+  <div onClick={onClick} className="right_arrow_proof">
+    <FaArrowRight />
+  </div>
+);
 
-// Custom Previous Arrow
-const PrevArrow = ({ onClick }) => {
-  return (
-    <div onClick={onClick} className="left_arrow_proof">
-      <FaArrowLeft />
-    </div>
-  );
-};
+const PrevArrow = ({ onClick }) => (
+  <div onClick={onClick} className="left_arrow_proof">
+    <FaArrowLeft />
+  </div>
+);
 
 const Proof = () => {
   const sliderRef = useRef(null);
@@ -58,10 +52,9 @@ const Proof = () => {
         <Slider {...settings} ref={sliderRef}>
           {imageData.map((item, index) => (
             <div key={index} className="relative group">
-              
               <img
                 src={item.image}
-                alt={`Proof ${index + 1}`}   
+                alt={`Proof ${index + 1}`}
                 className="object-cover w-full h-full"
               />
 
@@ -72,24 +65,17 @@ const Proof = () => {
                   backdropFilter: "blur(1px)",
                 }}
               >
-                {/* ✅ FIXED: use <a> instead of Link */}
                 <a
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="sm:mb-[85px] mb-[22px]"
                 >
-                  <div
-                    className="flex items-center justify-center sm:w-16 sm:h-16 w-12 h-12 bg-white rounded-full"
-                    style={{
-                      boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                    }}
-                  >
+                  <div className="flex items-center justify-center sm:w-16 sm:h-16 w-12 h-12 bg-white rounded-full shadow">
                     <RxExternalLink className="text-[#4283DE] sm:text-3xl text-2xl" />
                   </div>
                 </a>
               </div>
-
             </div>
           ))}
         </Slider>
