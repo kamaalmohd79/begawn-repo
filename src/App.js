@@ -22,18 +22,17 @@ function App() {
 
       {/* ✅ ONLY ONE WHATSAPP BUTTON */}
       <a
-        href="https://wa.me/+917986228254"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-2 w-[120px] h-[120px]"
-        aria-label="Contact us on WhatsApp"
-      >
-        <DotLottieReact
-          src="https://lottie.host/1d874b54-94c0-4d37-84f7-2e6b05738f06/JNtywP0p8R.lottie"
-          loop
-          autoplay
-        />
-      </a>
+  href="https://wa.me/917986228254"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="fixed bottom-5 right-5 w-[60px] h-[60px] bg-green-500 rounded-full flex items-center justify-center shadow-lg"
+>
+  <img
+    src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+    alt="WhatsApp"
+    className="w-8 h-8"
+  />
+</a>
     </>
   );
 }
