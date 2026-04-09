@@ -7,7 +7,6 @@ import Layout from './layout';
 
 
 
-import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 function App() {
   return (
