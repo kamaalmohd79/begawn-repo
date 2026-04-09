@@ -25,9 +25,9 @@ function App() {
   href="https://wa.me/917986228254"
   target="_blank"
   rel="noopener noreferrer"
-  className="fixed bottom-5 right-5 w-[56px] h-[56px] bg-green-500 rounded-full flex items-center justify-center shadow-lg"
+  className="fixed bottom-5 right-5 w-[20px] h-[20px] bg-green-500 rounded-full flex items-center justify-center shadow-lg"
 >
-  <FaWhatsapp className="text-white text-3xl" />
+  <FaWhatsapp className="text-white text-3xl  w-[20px] h-[20px]" />
 </a>
     </>
   );
