@@ -5,8 +5,7 @@ import Homepage from './Homepage';
 import 'react-multi-carousel/lib/styles.css';
 import Layout from './layout';
 
-// ❌ REMOVE THIS
-// import { FloatingWhatsApp } from 'react-floating-whatsapp'
+
 
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
