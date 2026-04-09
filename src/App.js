@@ -25,7 +25,7 @@ function App() {
         href="https://wa.me/+917986228254"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-2 w-[160px] h-[160px]"
+        className="fixed bottom-6 right-2 w-[120px] h-[120px]"
         aria-label="Contact us on WhatsApp"
       >
         <DotLottieReact
