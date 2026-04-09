@@ -1,5 +1,4 @@
-import React from "react";
-import Slider from "react-slick";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Carousel from 'react-multi-carousel';
@@ -53,32 +52,7 @@ const Client = () => {
     },
   ];
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    // appendDots: (dots) => (
-    //   <div style={{ padding: "20px", bottom: "-20px" }}>
-    //     <ul style={{ margin: "0px", display: "flex", justifyContent: "center" }}>
-    //       {dots}
-    //     </ul>
-    //   </div>
-    // ),
-    // customPaging: (i) => (
-    //   <div
-    //     style={{
-    //       width: "9px",
-    //       height: "9px",
-    //       backgroundColor: "#d9d9d9", // Default color
-    //       borderRadius: "50%",
-    //       margin: "0 4px",
-    //       transition: "background-color 0.3s, transform 0.3s",
-    //     }}
-    //   />
-    // ),
-  };
+ 
 
 
   return (

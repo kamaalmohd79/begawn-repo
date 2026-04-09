@@ -132,7 +132,7 @@ function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white text-[20px] font-bold mb-[55px] font-poppins">
+            <h4 className="text-white text-[20px] font-bold mb-[55px] font-">
               Contacts
             </h4>
             <ul className="flex flex-col gap-10">
