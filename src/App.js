@@ -1,5 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { FaWhatsapp } from "react-icons/fa";
 import Homepage from './Homepage';
 import 'react-multi-carousel/lib/styles.css';
 import Layout from './layout';
@@ -21,17 +22,13 @@ function App() {
       </Router>
 
       {/* ✅ ONLY ONE WHATSAPP BUTTON */}
-      <a
+  <a
   href="https://wa.me/917986228254"
   target="_blank"
   rel="noopener noreferrer"
   className="fixed bottom-5 right-5 w-[60px] h-[60px] bg-green-500 rounded-full flex items-center justify-center shadow-lg"
 >
-  <img
-    src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
-    alt="WhatsApp"
-    className="w-8 h-8"
-  />
+  <FaWhatsapp className="text-white text-3xl" />
 </a>
     </>
   );
