@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { scroller } from 'react-scroll';
+import { scroller } from "react-scroll";
 
 function Footer() {
   const scrollToSection = (section) => {
@@ -16,8 +16,11 @@ function Footer() {
         {/* first row */}
         <div className="md:w-[400px] w-full">
           <div className="flex items-center gap-4 mb-5 md:mb-12">
-            <img src="images/footer-logo.svg" alt="" className="w-[150px] mt-1" />
-
+            <img
+              src="images/footer-logo.svg"
+              alt=""
+              className="w-[150px] mt-1"
+            />
           </div>
           <h1 className="text-white xl:text-[56px] lg:text-[48px] text-[40px] font-sathosi font-bold leading-[84px] mb-4">
             Let’s Connect
@@ -30,17 +33,28 @@ function Footer() {
           </p>
           <div className="hidden md:block">
             <div className="flex items-center gap-6 mb-6">
-              <Link to={"https://www.linkedin.com/company/begawn-it-pvt-ltd"} target="_blank" rel="noopener noreferrer">
-                <img src="images/Group 427320708.png" alt="" className="w-8" />
+              <Link
+                to={"https://www.linkedin.com/company/begawn-pvt-ltd"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="images/Group 427320708.png"
+                  alt="LinkedIn"
+                  className="w-8"
+                />
               </Link>
-              <Link to={"https://calendly.com/begawnit0099/30min"} target="_blank" rel="noopener noreferrer">
+              <Link
+                to={"https://calendly.com/begawnit0099/30min"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <button className="text-[#578CDA] bg-white hover:bg-[#4283DE] hover:text-white transition-all duration-700 px-4 py-3 rounded-lg text-[18px] font-poppins font-semibold">
                   Book Discovery Call
                 </button>
               </Link>
             </div>
           </div>
-
         </div>
 
         {/* second row */}
@@ -51,59 +65,69 @@ function Footer() {
             </h4>
             <ul className="grid grid-cols-2 gap-8 md:gap-0 md:grid-cols-1">
               <div className="">
-                <Link to={"/"} className="mb-3"
-                onClick={(e) => {
-                  e.preventDefault(); // Prevent full page reload
-                  scrollToSection('home_section');
-                }}
+                <Link
+                  to={"/"}
+                  className="mb-3"
+                  onClick={(e) => {
+                    e.preventDefault(); // Prevent full page reload
+                    scrollToSection("home_section");
+                  }}
                 >
                   <li className="text-white opacity-[0.79] md:mb-[30px] mb-[15px] hover:opacity-100 transition-all duration-200 text-[16px] font-poppins font-medium ">
                     Home
                   </li>
                 </Link>
-                <Link onClick={(e) => {
-                  e.preventDefault(); // Prevent full page reload
-                  scrollToSection('service_section');
-
-                }}
-                  to={"/"} className="mb-3" >
+                <Link
+                  onClick={(e) => {
+                    e.preventDefault(); // Prevent full page reload
+                    scrollToSection("service_section");
+                  }}
+                  to={"/"}
+                  className="mb-3"
+                >
                   <li className="text-white opacity-[0.79] md:mb-[30px] mb-[15px] hover:opacity-100 transition-all duration-200 text-[16px] font-poppins font-medium ">
                     Our Services
                   </li>
                 </Link>
-                <Link onClick={(e) => {
-                  e.preventDefault(); // Prevent full page reload
-                  scrollToSection('choose_section');
-
-                }} to={"/"} className="mb-3" >
+                <Link
+                  onClick={(e) => {
+                    e.preventDefault(); // Prevent full page reload
+                    scrollToSection("choose_section");
+                  }}
+                  to={"/"}
+                  className="mb-3"
+                >
                   <li className="text-white opacity-[0.79] md:mb-[30px] mb-[15px] hover:opacity-100 transition-all duration-200 text-[16px] font-poppins font-medium ">
                     Why Choose us
                   </li>
                 </Link>
               </div>
               <div className="">
-                <Link to={"/"} className="mb-3" 
-                onClick={(e) => {
-                  e.preventDefault(); // Prevent full page reload
-                  scrollToSection('stack_section');
-                }}
+                <Link
+                  to={"/"}
+                  className="mb-3"
+                  onClick={(e) => {
+                    e.preventDefault(); // Prevent full page reload
+                    scrollToSection("stack_section");
+                  }}
                 >
                   <li className="text-white opacity-[0.79] md:mb-[30px] mb-[15px] hover:opacity-100 transition-all duration-200 text-[16px] font-poppins font-medium ">
                     Stack
                   </li>
                 </Link>
-                <Link to={"/"} className="mb-3"
-                onClick={(e) => {
-                  e.preventDefault(); // Prevent full page reload
-                  scrollToSection('portfolio_section');
-                }}
+                <Link
+                  to={"/"}
+                  className="mb-3"
+                  onClick={(e) => {
+                    e.preventDefault(); // Prevent full page reload
+                    scrollToSection("portfolio_section");
+                  }}
                 >
                   <li className="text-white opacity-[0.79] md:mb-[30px] mb-[15px] hover:opacity-100 transition-all duration-200 text-[16px] font-poppins font-medium ">
                     Portfolio
                   </li>
                 </Link>
               </div>
-
             </ul>
           </div>
 
@@ -121,8 +145,7 @@ function Footer() {
                       {" "}
                       079862 28254
                     </span>
-                  </a>
-                  {" "}
+                  </a>{" "}
                 </p>
               </li>
               <li className="flex items-center gap-2 leading-tight">
@@ -132,10 +155,9 @@ function Footer() {
                   <a href="mailto:info@begawn.com">
                     <span className="opacity-80 text-[16px] font-normal">
                       {" "}
-                      info@begawn.com
+                      hr@begawm.com
                     </span>
-                  </a>
-                  {" "}
+                  </a>{" "}
                 </p>
               </li>
               <li className="flex items-center gap-2 leading-tight">
@@ -147,8 +169,8 @@ function Footer() {
                 <p className="text-white text-[13px] font-poppins font-bold sm:w-[400px] ">
                   Address <br />{" "}
                   <span className="opacity-80 text-[16px] font-normal leading-[21px]  ">
-                    Plot no. E-309, 8A, Industrial Area, Sector 75,
-                    Sahibzada Ajit Singh Nagar, Punjab 160062
+                    K&B tower, F-465, Industrial Area, Sector 74, Sahibzada Ajit
+                    Singh Nagar, Punjab 140307
                   </span>{" "}
                 </p>
               </li>
@@ -159,12 +181,24 @@ function Footer() {
         <div className="block mt-6 md:hidden">
           <div className="flex items-center gap-6 mb-6">
             <div className="w-12 h-12">
-              <Link to={"https://www.linkedin.com/company/begawn-it-pvt-ltd"} target="_blank" rel="noopener noreferrer">
-                <img src="images/Group 427320708.png" alt="" className="w-full h-full" />
+              <Link
+                to={"https://www.linkedin.com/company/begawn-it-pvt-ltd"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="images/Group 427320708.png"
+                  alt=""
+                  className="w-full h-full"
+                />
               </Link>
             </div>
 
-            <Link to={"https://calendly.com/begawnit0099/30min"} target="_blank" rel="noopener noreferrer">
+            <Link
+              to={"https://calendly.com/begawnit0099/30min"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button className="text-[#578CDA] bg-white hover:bg-[#4283DE] hover:text-white transition-all duration-700 px-4 py-3 rounded-lg text-[18px] font-poppins font-semibold">
                 Book Discovery Call
               </button>
@@ -175,10 +209,10 @@ function Footer() {
 
       <div className="max-w-[1350px] px-4 mx-auto">
         <hr className="  border-b border-[#FFFFFF47]" />
-        <p className="text-white sm:text-[18px] text-[16px] font-poppins font-normal py-4 text-center mt-4">© 2025 BEGAWN IT Pvt. Ltd. All rights reserved.</p>
+        <p className="text-white sm:text-[18px] text-[16px] font-poppins font-normal py-4 text-center mt-4">
+          © {new Date().getFullYear()} BEGAWN IT Pvt. Ltd. All rights reserved.
+        </p>
       </div>
-
-
     </div>
   );
 }

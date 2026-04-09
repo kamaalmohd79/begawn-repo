@@ -27,7 +27,7 @@ function App() {
         href="https://wa.me/+917986228254" // WhatsApp international URL format
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed  bottom-6 left-6 w-[160px] h-160px"
+        className="fixed  bottom-6 right-2 w-[160px] h-160px"
         aria-label="Contact us on WhatsApp"
       >
         <DotLottieReact
@@ -37,10 +37,10 @@ function App() {
         />
       </a>
 
-      <TawkMessengerReact
+      {/* <TawkMessengerReact
         propertyId="62f25dc754f06e12d88db945"
         widgetId="1ga1bslpq"
-      />
+      /> */}
     </>
 
   );
