@@ -155,7 +155,7 @@ function Footer() {
                   <a href="mailto:info@begawn.com">
                     <span className="opacity-80 text-[16px] font-normal">
                       {" "}
-                      hr@begawm.com
+                      hr@begawn.com
                     </span>
                   </a>{" "}
                 </p>
